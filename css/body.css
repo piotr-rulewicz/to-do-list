@@ -1,0 +1,9 @@
+.body {
+  min-height: 100%;
+  padding: 3%;
+  background-color: #eee;
+  font-family: "Ubuntu", "Arial", "Helvetica", sans-serif;
+  word-break: break-word;
+  /* overflow-wrap: anywhere; - nowsza funkcja
+  word-break: break-word; - lepiej wspierana */
+}

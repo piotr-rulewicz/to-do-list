@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  background-color: #fff;
+  max-width: 1200px;
+  margin-top: 1%;
+}
+
+.list__header {
+  padding-left: 3%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid #eee;
+}
+
+.list__toDo {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-gap: 3%;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  text-align: justify;
+  list-style: none;
+}
+
+.list__content {
+  color: red;
+}
+
+.doneButton {
+  border-style: none;
+}
+
+.removeButton {
+  border-style: none;
+}

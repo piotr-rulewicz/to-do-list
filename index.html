@@ -5,38 +5,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista zadań</title>
+  <link rel="icon" href="img/favicon.ico">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="css/style-reset.css" rel="stylesheet">
+  <link href="css/body.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/list.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
   <main class="main">
-    <header class="mainHeader">
+    <header class="main__header">
       <h1>Lista zadań</h1>
     </header>
-    <div class="newTasks">
-      <h2>Dodaj nowe zadanie</h2>
-      <form class="inputTasks">
-        <input class="writeTask" type="text" placeholder="Co jest do zrobienia?"></input>
-        <button class="addTask" type="submit">Dodaj zadanie</button>
+    <section class="form">
+      <h2 class="form__header">Dodaj nowe zadanie</h2>
+      <form class="form__inputTasks">
+        <input class="form__writeTask" type="text" placeholder="Co jest do zrobienia?"></input>
+        <button class="form__submitTask" type="submit">Dodaj zadanie</button>
       </form>
-    </div>
-    <div class="myList">
-      <h2>Lista zadań</h2>
-      <ul class="toDoList">
-        <li>
-          test 1
+    </section>
+    <section class="list">
+      <h2 class="list__header">Lista zadań</h2>
+      <ul class="list__toDo">
+        <button class="doneButton">Zrobione</button>
+        <li class="list__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium? Iure maiores
+          doloribus animi reiciendis hic est molestias sapiente, autem atque possimus dicta voluptatibus sit ab modi
+          enim cumque et!
         </li>
-        <li>
-          test 2
+        <button class="removeButton">Usuń</button>
+        <button class="doneButton">Zrobione</button>
+        <li class="list__content">
+          Obiad
         </li>
-        <li>
-          test 3
+        <button class="removeButton">Usuń</button>
+        <button class="doneButton">Zrobione</button>
+        <li class="list__content">
+          Kolacja
         </li>
+        <button class="removeButton">Usuń</button>
+        <!-- <li>
+          <button class="doneButton">Zrobione</button>
+          <p>Kolacja</p>
+          <button class="removeButton">Usuń</button>
+        </li> -->
       </ul>
-    </div>
-    <footer class="footer">
-      <p>FOOTER</p>
-    </footer>
+    </section>
   </main>
+  <footer class="footer">
+    <p class="footer__content">Zadanie z modułu #6 "Lista zadań" - Wykonanie w ramach kursu YouCode: © PioRul -
+      Wrzesień'23</p>
+  </footer>
 </body>
 
 </html>

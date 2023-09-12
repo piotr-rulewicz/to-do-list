@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  background-color: #fff;
+  max-width: 1200px;
+}
+
+.form__header {
+  padding-left: 3%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid #eee;
+}
+
+.form__inputTasks {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+}
+
+.form__writeTask {
+  flex-basis: 80%;
+  padding: 1%;
+  border: 2px solid #eee;
+}
+
+.form__submitTask {
+  flex-basis: 15%;
+  padding: 1%;
+  background-color: #008080;
+  border: none;
+  color: #fff;
+}
