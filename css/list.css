@@ -26,7 +26,14 @@
 }
 
 .list__content {
+  padding: 1%;
   color: red;
+}
+
+.list__content--done {
+  padding: 1%;
+  color: red;
+  text-decoration: line-through;
 }
 
 .doneButton {

@@ -16,6 +16,7 @@
   <link href="css/form.css" rel="stylesheet">
   <link href="css/list.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
+  <script defer="" src="js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
@@ -29,19 +30,17 @@
     </header>
     <section class="form">
       <h2 class="form__header">Dodaj nowe zadanie</h2>
-      <form class="form__inputTasks">
-        <input class="form__writeTask" type="text" placeholder="Co jest do zrobienia?"></input>
-        <button class="form__submitTask" type="submit">Dodaj zadanie</button>
+      <form class="form__inputTasks js-inputTasks">
+        <input class="form__writeTask js-writeTask" type="text" placeholder="Co jest do zrobienia?"></input>
+        <button class="form__submitTask js-submitTask" type="submit">Dodaj zadanie</button>
       </form>
     </section>
     <section class="list">
       <h2 class="list__header">Lista zadań</h2>
-      <ul class="list__toDo">
+      <ul class="list__toDo js-toDo">
         <button class="doneButton">Zrobione</button>
         <li class="list__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusantium? Iure maiores
-          doloribus animi reiciendis hic est molestias sapiente, autem atque possimus dicta voluptatibus sit ab modi
-          enim cumque et!
+          Śniadanie
         </li>
         <button class="removeButton">Usuń</button>
         <button class="doneButton">Zrobione</button>
@@ -54,11 +53,6 @@
           Kolacja
         </li>
         <button class="removeButton">Usuń</button>
-        <!-- <li>
-          <button class="doneButton">Zrobione</button>
-          <p>Kolacja</p>
-          <button class="removeButton">Usuń</button>
-        </li> -->
       </ul>
     </section>
   </main>
