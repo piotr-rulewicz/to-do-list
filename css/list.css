@@ -14,14 +14,14 @@
 }
 
 .list__toDo {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-gap: 3%;
   justify-content: space-between;
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 2%;
-  text-align: justify;
+  text-align: justify; */
   list-style: none;
 }
 
@@ -36,10 +36,10 @@
   text-decoration: line-through;
 }
 
-.doneButton {
+.list__doneButton {
   border-style: none;
 }
 
-.removeButton {
+.list__removeButton {
   border-style: none;
 }
