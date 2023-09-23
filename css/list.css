@@ -14,32 +14,58 @@
 }
 
 .list__toDo {
-  /* display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-gap: 3%;
-  justify-content: space-between;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 2%;
-  text-align: justify; */
-  list-style: none;
+  padding-right: 40px;
 }
 
 .list__content {
-  padding: 1%;
-  color: red;
+  display: grid;
+  grid-template-columns: 60px 4fr 60px;
+  grid-template-rows: 1fr;
+  grid-gap: 3%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  list-style: none;
+  color: #999;
+  border-bottom: 2px solid #eee;
 }
 
 .list__content--done {
-  padding: 1%;
-  color: red;
+  display: grid;
+  grid-template-columns: 60px 4fr 60px;
+  grid-template-rows: 1fr;
+  grid-gap: 3%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  list-style: none;
+  color: #999;
   text-decoration: line-through;
+  border-bottom: 2px solid #eee;
 }
 
 .list__doneButton {
+  height: 60px;
+  background-color: #008000;
+  color: #008000;
+  font-size: 30px;
+  border-style: none;
+}
+
+.list__doneButton--checked {
+  height: 60px;
+  background-color: #008000;
+  color: #fff;
+  font-size: 30px;
   border-style: none;
 }
 
 .list__removeButton {
+  height: 60px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 20px;
   border-style: none;
 }

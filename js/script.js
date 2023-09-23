@@ -1,13 +1,5 @@
 {
   const tasks = [
-    {
-      content: "Nagrać lekcję",
-      done: false,
-    },
-    {
-      content: "Zjeść pierogi",
-      done: true,
-    },
   ];
 
   const addNewTask = (newTask) => {
@@ -49,12 +41,13 @@
     let htmlString = "";
 
     for (const task of tasks) {
+      const listButtonChecked = task.done ? "list__doneButton--checked" : "list__doneButton";
       htmlString += `
         <li
           ${task.done ? " class=\"list__content--done\" " : " class=\"list__content\" "}>
-          <button class="list__doneButton js-doneButton">Zrobione</button>
-          <button class="list__removeButton js-removeButton">Usuń</button>
+          <button class="${listButtonChecked} js-doneButton"><i class="fa-solid fa-check"></i></button>
           ${task.content}
+          <button class="list__removeButton js-removeButton"><i class="fa-regular fa-trash-can"></i></button>          
         </li>                       
         `;
     };
