@@ -19,7 +19,7 @@
 
 .list__content {
   display: grid;
-  grid-template-columns: 60px 4fr 60px;
+  grid-template-columns: 50px 4fr 50px;
   grid-template-rows: 1fr;
   grid-gap: 3%;
   justify-content: space-around;
@@ -27,13 +27,13 @@
   margin-bottom: 1%;
   padding-bottom: 1%;
   list-style: none;
-  color: #999;
+  color: #666;
   border-bottom: 2px solid #eee;
 }
 
 .list__content--done {
   display: grid;
-  grid-template-columns: 60px 4fr 60px;
+  grid-template-columns: 50px 4fr 50px;
   grid-template-rows: 1fr;
   grid-gap: 3%;
   justify-content: space-around;
@@ -41,13 +41,13 @@
   margin-bottom: 1%;
   padding-bottom: 1%;
   list-style: none;
-  color: #999;
+  color: #666;
   text-decoration: line-through;
   border-bottom: 2px solid #eee;
 }
 
 .list__doneButton {
-  height: 60px;
+  height: 50px;
   background-color: #008000;
   color: #008000;
   font-size: 30px;
@@ -55,7 +55,7 @@
 }
 
 .list__doneButton--checked {
-  height: 60px;
+  height: 50px;
   background-color: #008000;
   color: #fff;
   font-size: 30px;
@@ -63,9 +63,15 @@
 }
 
 .list__removeButton {
-  height: 60px;
+  height: 50px;
   background-color: #ff0000;
   color: #fff;
   font-size: 20px;
   border-style: none;
+}
+
+@media (width <=576px) {
+  .list__toDo {
+    padding: 3%;
+  }
 }
