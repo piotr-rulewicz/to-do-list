@@ -2,8 +2,6 @@
 <html lang="pl">
 
 <!-- Do zrobienia:
----- responsywność (Media Queries)
----- walidacja kodu i formularza (w tym blokada HTML)
 ---- opengraph
 ---- readme.md
  -->
@@ -39,7 +37,8 @@
     <section class="form">
       <h2 class="form__header">Dodaj nowe zadanie</h2>
       <form class="form__inputTasks js-inputTasks">
-        <input class="form__writeTask js-writeTask" type="text" placeholder="Co jest do zrobienia?"></input>
+        <input class="form__writeTask js-writeTask" placeholder="Co masz do zrobienia? (wpisz 2 do 128 znaków)"
+          type="text" minlength="2" maxlength="128"></input>
         <button class="form__submitTask js-submitTask" type="submit">Dodaj zadanie</button>
       </form>
     </section>
