@@ -3,7 +3,7 @@
 ## Description
 
 A simple to do list as continuation of learning HTML, CSS and Javascript.<br>
-The html code includes: the form with a button "submit", fonts from Fontawesome and Google Fonts.<br>
+The html code includes: the form with a button "submit", fonts from Font Awesome and Google Fonts.<br>
 Applied Media Query, normalize.css and the BEM convention.<br>
 In Javascript code I used **arrow functions**, **render** and **init** functions, variables **const** and **let**
 
