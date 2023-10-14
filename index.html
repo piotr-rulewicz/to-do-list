@@ -13,9 +13,9 @@
   <link href="css/style-reset.css" rel="stylesheet">
   <link href="css/body.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/section.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
   <link href="css/list.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
   <script defer="" src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/558c2bba1f.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,24 +29,20 @@
     <header class="main__header">
       <h1>Lista zadań</h1>
     </header>
-    <section class="form">
-      <h2 class="form__header">Dodaj nowe zadanie</h2>
-      <form class="form__inputTasks js-inputTasks">
-        <input class="form__writeTask js-writeTask" placeholder="Co masz do zrobienia? (wpisz 2 do 128 znaków)"
-          type="text" minlength="2" maxlength="128"></input>
+    <section class="section">
+      <h2 class="section__header">Dodaj nowe zadanie</h2>
+      <form class="form js-inputTasks">
+        <input class="form__writeTask js-writeTask" placeholder="Co jest do zrobienia?" type="text" minlength="2"
+          maxlength="128"></input>
         <button class="form__submitTask js-submitTask" type="submit">Dodaj zadanie</button>
       </form>
-    </section>
-    <section class="list">
-      <h2 class="list__header">Lista zadań</h2>
-      <ul class="list__toDo js-toDo">
-      </ul>
+      <h2 class="section__header">Lista zadań</h2>
+      <list class="list">
+        <ul class="list__toDo js-toDo">
+        </ul>
+      </list>
     </section>
   </main>
-  <footer class="footer">
-    <p class="footer__content">Zadanie z modułu #6 "Lista zadań" - Wykonanie w ramach kursu YouCode: © PioRul -
-      Wrzesień'23</p>
-  </footer>
 </body>
 
 </html>

@@ -1,27 +1,14 @@
 .form {
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  background-color: #fff;
-  max-width: 1200px;
-}
-
-.form__header {
-  padding-left: 3%;
-  padding-bottom: 2%;
-  border-bottom: 2px solid #eee;
-}
-
-.form__inputTasks {
-  display: flex;
   justify-content: space-between;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 2%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-bottom: 10px solid #eee;
 }
 
 .form__writeTask {
-  flex-basis: 75%;
+  flex-basis: 83%;
   padding: 1%;
   border: 2px solid #eee;
 }
@@ -29,6 +16,7 @@
 .form__submitTask {
   flex-basis: 15%;
   min-width: 120px;
+  margin-left: 20px;
   padding: 1%;
   background-color: #008080;
   border: none;
@@ -36,19 +24,22 @@
 }
 
 @media (width <=576px) {
-  .form__inputTasks {
+  .form {
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
   }
 
   .form__writeTask {
     flex-basis: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
+    min-height: 50px;
   }
 
   .form__submitTask {
     flex-basis: 100%;
+    min-height: 50px;
+    max-width: 100px;
   }
 }
