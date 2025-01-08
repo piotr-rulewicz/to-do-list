@@ -15,12 +15,18 @@
 
 .form__submitTask {
   flex-basis: 15%;
+  padding: 1%;
+  border: none;
   min-width: 120px;
   margin-left: 20px;
-  padding: 1%;
-  background-color: #008080;
-  border: none;
+  background-color: #00f;
   color: #fff;
+}
+
+.form__submitTask:hover {
+  cursor: pointer;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 @media (width <=576px) {
