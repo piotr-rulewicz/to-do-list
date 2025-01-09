@@ -1,24 +1,21 @@
 .form {
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  border-bottom: 10px solid #eee;
+  padding: 5px;
 }
 
 .form__writeTask {
-  flex-basis: 83%;
-  padding: 1%;
-  border: 2px solid #eee;
+  flex-basis: 75%;
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid #000;
 }
 
 .form__submitTask {
-  flex-basis: 15%;
-  padding: 1%;
+  flex-basis: 25%;
+  margin-left: 5px;
+  padding: 5px;
   border: none;
-  min-width: 120px;
-  margin-left: 20px;
   background-color: #00f;
   color: #fff;
 }
@@ -34,18 +31,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
-    margin-bottom: 20px;
+    margin: 5px auto;
   }
 
   .form__writeTask {
     flex-basis: 100%;
-    margin-bottom: 20px;
-    min-height: 50px;
+    margin: 5px auto;
   }
 
   .form__submitTask {
-    flex-basis: 100%;
-    min-height: 50px;
-    max-width: 100px;
+    flex-basis: 40%;
+    margin: 5px auto;
   }
 }
