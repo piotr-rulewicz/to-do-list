@@ -1,5 +1,0 @@
-# Excluding files from Git
-.gitignore.txt
-to-do-list.code-workspace
-
-###
