@@ -9,3 +9,13 @@
   padding: 5px;
   border-bottom: 1px solid #000;
 }
+
+.section__footer {
+  margin: 5px;
+  padding: 5px;
+}
+
+.section__footer--paragraph {
+  font-size: 12px;
+  text-align: center;
+}

@@ -4,24 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Lista zadań</title>
-  <link rel="icon" href="img/favicon.ico">
-  <meta property="og:image" content="img/to-do-list_og-small.jpg">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="css/style-reset.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico">
+
   <link href="css/body.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/section.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
   <link href="css/list.css" rel="stylesheet">
-  <script defer="" src="js/script.js"></script>
-  <script src="https://kit.fontawesome.com/558c2bba1f.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
-    rel="stylesheet">
 </head>
 
 <body class="body">
@@ -31,9 +32,9 @@
     </header>
     <section class="section">
       <h2 class="section__header">Dodaj nowe zadanie</h2>
-      <form class="form js-inputTasks">
-        <input class="form__writeTask js-writeTask" placeholder="Wpisz zadanie" type="text" minlength="2"
-          maxlength="128">
+      <form class="form js-inputTasks for=inputTask">
+        <input class="form__writeTask js-writeTask" name="inputTask" placeholder="Wpisz zadanie" type="text"
+          minlength="2" maxlength="128">
         <button class="form__submitTask js-submitTask" type="submit">Dodaj zadanie</button>
       </form>
       <h2 class="section__header">Lista zadań</h2>
@@ -41,8 +42,19 @@
         <ul class="list__toDo js-toDo">
         </ul>
       </list>
+      <section__footer>
+        <p class="section__footer--paragraph">
+          Zadania z nauki HTML, CSS, JavaScript<br>
+          Wykonanie: Piotr Rulewicz<br>
+          Maj 2025
+        </p>
+      </section__footer>
     </section>
   </main>
+
+  <script src="https://kit.fontawesome.com/558c2bba1f.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
+
 </body>
 
 </html>
